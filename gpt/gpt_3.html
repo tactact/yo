@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>gpt</title>
+    <link rel="stylesheet" href="../document.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../script.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="head">
+          <div class="slide-open" id="slide-open">
+            <span class="burgur" id="burgur">
+              <span class="top-line"></span>
+              <span class="bot-line"></span>
+            </span>
+          </div>
+          <div class="logo"><a href="../index.html">AIcademy</a></div>
+        </div>
+        <div class="body">
+          <div class="content">
+            <img src="../img/gpt.svg" width="70%">
+          </div>
+          <div class="content">
+            <p>ChatGPT는 어떤 질문이든 순식간에 답변한다. 하지만 같은 내용의 질문이더라도 질문의 형식에 따라 답변이 천차만별로 달라질 수 있다.</p>
+            <br>
+            <p>따라서 '좋은' 답변을 얻기 위해선 '좋은' 질문을 하는 것이 중요하다. 이어지는 글에선 이러한 '좋은' 질문을 만드는 대표적인 방법 몇 가지를 소개한다.</p>
+            <br>
+          </div>
+          <div class="content">
+            <h2>1. 영어로 질문하기</h2>
+            <br>
+            <p>ChatGPT는 기본적으로 영어를 바탕으로 만들어졌다. 따라서 영어로 된 질문을 처리할 때 처리 속도, 정확도 등의 면에서 가장 뛰어난 성능을 보인다.</p>
+            <br>
+            <p>파파고 등의 번역기를 활용하여 영어로 질문하는 것 또한 좋은 방법이다.</p>
+            <br>
+          </div>
+          <div class="content">
+            <h2>2. 구체적으로 상황 설명하기</h2>
+            <br>
+            <p>질문을 하게된 구체적인 배경과 목적을 설명해주는 것은 답변의 활용도를 높일 수 있다.</p>
+            <br>
+            <p>예를 들어, 'AI와 관련된 책을 추천해줘'라는 질문보단 '나는 초등학교 교사고, 수업시간에 학생들을 대상으로 AI에 대한 교육을 진행하려고 해. 학생들이 이해하기 쉬우면서 흥미를 가질만한 AI 관련 책을 추천해줘.'와 같은 질문이 더 자신의 상황에 적합한 답변을 얻을 수 있다.</p>
+            <br>
+          </div>
+          <div class="content">
+            <h2>3. ChatGPT에게 역할 부여하기</h2>
+            <br>
+            <p> ChatGPT에게 어떠한 역할을 부여하느냐에 따라 답변은 크게 달라질 수 있다.</p>
+            <br>
+            <p>예를 들어, '한국에 대해 소개하는 글을 써줘' 라는 질문은 '네가 한국사 교사라고 생각하고 한국을 소개하는 글을 써줘', 또는 '네가 한국 투어 가이드라고 생각하고 한국을 소개하는 글을 써줘'와 같은 역할 부여를 통해 답변의 내용이 크게 달라질 수 있다.</p>
+            <br>
+          </div>
+          <div class="content">
+            <h2>4. 연쇄 프롬프트</h2>
+            <br>
+            <p> '연쇄 프롬프트'는 프롬프트 한 문장(한 질문 안에)에 다양한 작업을 요청할 때 유용한 기술이다.</p>
+            <br>
+            <p>다양한 조건을 집어넣다 보면 '~하고 ~하고 ~해줘'와 같이 복잡한 구조의 프롬프트가 만들어지게 된다. 이렇게 입력한다고 해도 챗GPT가 인식하고 순차적으로 처리하기는 하지만 작업 순서가 뒤바뀌는 오류가 발생할 수 있다.</p>
+            <br>
+            <p>이때 오류를 줄이기 위해 각 작업을 인위적으로 구분하는 것이 연쇄 프롬프트 기술이다. 각 작업 사이사이에 [Output.] 이라는 명령어를 입력하면 된다. 예를 들면 이런 식이다.</p>
+            <br>
+            <p>"햄버거에 대한 기사 개요를 작성해줘. 헤드라인, 개요, 소제목으로 구성하고 <br>
+            [output.] <br>
+            각 소제목에 대해 3개의 핵심 메시지를 작성해줘 <br>
+            [output.] <br>
+            각 소제목의 핵심 키워드 3개를 추출해 추가해줘"</p>
+            <br>
+            <p>이같이 입력하면 챗GPT가 위에서부터 순차적으로 진행하며 답변을 완성한다.</p>
+            <br>
+          </div>
+          <div id="id" class="content">
+            <p>출처: 머니투데이 '챗GPT 일 잘 시키는 실전 팁 6선 [티타임즈]' 이재원 기자 - 2023.03.18</p>
+            <br>
+            <br>
+            <p>이(3)</p>
+          </div>
+        </div>
+      </div>
+      <div class="slide" id="slide">
+        <div class="slide-title">
+          목차
+        </div>
+        <ul>
+          <li><a href="gpt_1.html">ChatGPT란?</a></li>
+          <li><a href="gpt_2.html">ChatGPT 사용법</a></li>
+          <li><a href="gpt_3.html">ChatGPT 사용 팁</a></li>
+          <li><a href="gpt_4.html">ChatGPT 활용 - 작문</a></li>
+          <li><a href="gpt_5.html">ChatGPT 활용 - 글 요약</a></li>
+          <li><a href="gpt_6.html">ChatGPT 활용 - 코딩</a></li>
+          <li><a href="gpt_7.html">ChatGPT 활용 - 기타</a></li>
+          <li><a href="gpt_8.html">ChatGPT 사용시 주의사항</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
